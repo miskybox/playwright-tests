@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test('Registro en OpenCart', async ({ page }) => {
   await page.goto('https://opencart.com/en-gb?route=account/register');
 
-  // Wait up to 10 seconds for the form; fail fast if not visible
+  
   const form = page.locator('form');
   await expect(form).toBeVisible({ timeout: 10000 });
 

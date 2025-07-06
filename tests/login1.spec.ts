@@ -1,6 +1,23 @@
 import { test, expect } from '@playwright/test';
 
 test.describe.only('Pruebas de Login – Sauce Demo Shopify', () => {
+//quitar only si quiero ejecutar todos los test
+//test.only('Solo este test se ejecuta', async ({ page }) => {});
+//test.describe.only('Solo este grupo se ejecuta', () => {});
+
+//test.skip('Este test será saltado', async ({ page }) => {});
+//test.describe.skip('Saltamos todos estos tests', () => {});
+
+//test.fixme('Este test está roto y lo voy a arreglar después', async ({ page }) => {});
+//test.describe.fixme('Este grupo de tests está roto y lo arreglaré después', () => {});
+
+//test.fail('Este test debería fallar por ahora', async ({ page }) => {});
+//test.describe.fail('Este grupo de tests debería fallar por ahora', () => {});
+
+//test.slow('Este test es lento', async ({ page }) => {});
+//test.describe.slow('Este grupo de tests es lento', () => {});
+
+
 
   test.beforeEach(async ({ page }) => {
 
@@ -29,4 +46,4 @@ test.describe.only('Pruebas de Login – Sauce Demo Shopify', () => {
   });
 
 });
-//en este cambie el  page.fill por el get by label
+//en este cambiamos el  page.fill por el get by label
