@@ -1,0 +1,30 @@
+[
+  {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "expectedError": "",
+    "shouldPass": true,
+    "tags": "@login @smoke"
+  },
+  {
+    "username": "problem_user",
+    "password": "secret_sauce",
+    "expectedError": "",
+    "shouldPass": true,
+    "tags": "@login @error"
+  },
+  {
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "expectedError": "Epic sadface: Sorry, this user has been locked out.",
+    "shouldPass": false,
+    "tags": "@login @locked @error"
+  },
+  {
+    "username": "invalid_user",
+    "password": "wrong_pass",
+    "expectedError": "Epic sadface: Username and password do not match any user in this service",
+    "shouldPass": false,
+    "tags": "@login @error"
+  }
+]
